@@ -1,0 +1,320 @@
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "todos"[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "position" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210316023925)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-03-17 02:53:57.847415"], ["updated_at", "2021-03-17 02:53:57.847415"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "18b5d5eec9fdf1587fd0b6ace389d660613e481b"], ["created_at", "2021-03-17 02:53:57.872558"], ["updated_at", "2021-03-17 02:53:57.872558"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "todos"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "todos"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "todos"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "todos"[0m
+  [1m[35m (22.9ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "position" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (24.8ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "position" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (22.3ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "position" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (18.4ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "position" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (15.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (20.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (12.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210316023925)[0m
+  [1m[35m (15.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210316023925)[0m
+  [1m[35m (16.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210316023925)[0m
+  [1m[35m (19.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210316023925)[0m
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (15.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-03-17 02:53:58.167705"], ["updated_at", "2021-03-17 02:53:58.167705"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-03-17 02:53:58.183606"], ["updated_at", "2021-03-17 02:53:58.183606"]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "18b5d5eec9fdf1587fd0b6ace389d660613e481b"], ["created_at", "2021-03-17 02:53:58.187389"], ["updated_at", "2021-03-17 02:53:58.187389"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-03-17 02:53:58.186227"], ["updated_at", "2021-03-17 02:53:58.186227"]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-03-17 02:53:58.197742"], ["updated_at", "2021-03-17 02:53:58.197742"]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "18b5d5eec9fdf1587fd0b6ace389d660613e481b"], ["created_at", "2021-03-17 02:53:58.208468"], ["updated_at", "2021-03-17 02:53:58.208468"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "18b5d5eec9fdf1587fd0b6ace389d660613e481b"], ["created_at", "2021-03-17 02:53:58.208583"], ["updated_at", "2021-03-17 02:53:58.208583"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "18b5d5eec9fdf1587fd0b6ace389d660613e481b"], ["created_at", "2021-03-17 02:53:58.219135"], ["updated_at", "2021-03-17 02:53:58.219135"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (15.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "todos";
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (980190962, 'MyString', NULL, '2021-03-17 02:53:58.219982', '2021-03-17 02:53:58.219982');
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (298486374, 'MyString', NULL, '2021-03-17 02:53:58.219982', '2021-03-17 02:53:58.219982')[0m
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+TodosControllerTest: test_should_destroy_todo
+---------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "todos";
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (980190962, 'MyString', NULL, '2021-03-17 02:53:58.242166', '2021-03-17 02:53:58.242166');
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (298486374, 'MyString', NULL, '2021-03-17 02:53:58.242166', '2021-03-17 02:53:58.242166')[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "todos";
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (980190962, 'MyString', NULL, '2021-03-17 02:53:58.239110', '2021-03-17 02:53:58.239110');
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (298486374, 'MyString', NULL, '2021-03-17 02:53:58.239110', '2021-03-17 02:53:58.239110')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "todos";
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (980190962, 'MyString', NULL, '2021-03-17 02:53:58.251094', '2021-03-17 02:53:58.251094');
+INSERT INTO "todos" ("id", "description", "position", "created_at", "updated_at") VALUES (298486374, 'MyString', NULL, '2021-03-17 02:53:58.251094', '2021-03-17 02:53:58.251094')[0m
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+TodosControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[35m (19.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+TodosControllerTest: test_should_get_new
+----------------------------------------
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+TodosControllerTest: test_should_update_todo
+--------------------------------------------
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+Started DELETE "/todos/980190962" for 127.0.0.1 at 2021-03-17 03:53:58 +0100
+Started GET "/todos/980190962/edit" for 127.0.0.1 at 2021-03-17 03:53:58 +0100
+Started PATCH "/todos/980190962" for 127.0.0.1 at 2021-03-17 03:53:58 +0100
+Started GET "/todos/new" for 127.0.0.1 at 2021-03-17 03:53:58 +0100
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Processing by TodosController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Processing by TodosController#new as HTML
+  Rendering todos/edit.html.erb within layouts/application
+Processing by TodosController#update as HTML
+  Parameters: {"todo"=>{"description"=>"MyString", "position"=>nil}, "id"=>"980190962"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering todos/new.html.erb within layouts/application
+Redirected to http://www.example.com/todos/980190962
+Completed 302 Found in 12ms (ActiveRecord: 0.1ms | Allocations: 1161)
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTodo Destroy (0.2ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/todos
+Completed 302 Found in 29ms (ActiveRecord: 0.5ms | Allocations: 1238)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+TodosControllerTest: test_should_get_index
+------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+TodosControllerTest: test_should_create_todo
+--------------------------------------------
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  Rendered todos/_form.html.erb (Duration: 12.9ms | Allocations: 2805)
+  Rendered todos/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 3291)
+Started GET "/todos" for 127.0.0.1 at 2021-03-17 03:53:58 +0100
+  Rendered todos/_form.html.erb (Duration: 23.8ms | Allocations: 2848)
+  Rendered todos/edit.html.erb within layouts/application (Duration: 26.4ms | Allocations: 3383)
+Started POST "/todos" for 127.0.0.1 at 2021-03-17 03:53:58 +0100
+Processing by TodosController#index as HTML
+Processing by TodosController#create as HTML
+  Parameters: {"todo"=>{"description"=>"MyString", "position"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE (1 = 1) AND ("todos"."position" IS NOT NULL) ORDER BY "todos"."position" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTodo Create (0.2ms)[0m  [1m[32mINSERT INTO "todos" ("description", "position", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "MyString"], ["position", 1], ["created_at", "2021-03-17 02:53:58.532937"], ["updated_at", "2021-03-17 02:53:58.532937"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/todos/980190963
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms | Allocations: 1290)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+TodosControllerTest: test_should_show_todo
+------------------------------------------
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/todos/980190962" for 127.0.0.1 at 2021-03-17 03:53:58 +0100
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 402)
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."position" ASC[0m
+  Rendered todos/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 596)
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/nova/Documents/stimulus-drag-and-drop/app/public/packs-test
+[Webpacker] Hash: 94ba4edf5c393bbcb7f0
+Version: webpack 4.46.0
+Time: 1719ms
+Built at: 03/17/2021 3:54:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d4d54b428bc7d216e468.js    359 KiB  application  [emitted] [immutable]  application
+js/application-d4d54b428bc7d216e468.js.map    377 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-d4d54b428bc7d216e468.js js/application-d4d54b428bc7d216e468.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 185 bytes {application} [built]
+[./app/javascript/controllers/drag_controller.js] 4.21 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 773 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 45 hidden modules
+
+Completed 200 OK in 3748ms (Views: 3744.8ms | ActiveRecord: 0.3ms | Allocations: 13811)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[Webpacker] Compiled all packs in /home/nova/Documents/stimulus-drag-and-drop/app/public/packs-test
+[Webpacker] Hash: 94ba4edf5c393bbcb7f0
+Version: webpack 4.46.0
+Time: 1705ms
+Built at: 03/17/2021 3:54:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d4d54b428bc7d216e468.js    359 KiB  application  [emitted] [immutable]  application
+js/application-d4d54b428bc7d216e468.js.map    377 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-d4d54b428bc7d216e468.js js/application-d4d54b428bc7d216e468.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 185 bytes {application} [built]
+[./app/javascript/controllers/drag_controller.js] 4.21 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 773 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 45 hidden modules
+
+Completed 200 OK in 3752ms (Views: 3749.6ms | ActiveRecord: 0.1ms | Allocations: 13633)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[Webpacker] Compiled all packs in /home/nova/Documents/stimulus-drag-and-drop/app/public/packs-test
+[Webpacker] Hash: 94ba4edf5c393bbcb7f0
+Version: webpack 4.46.0
+Time: 1749ms
+Built at: 03/17/2021 3:54:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d4d54b428bc7d216e468.js    359 KiB  application  [emitted] [immutable]  application
+js/application-d4d54b428bc7d216e468.js.map    377 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-d4d54b428bc7d216e468.js js/application-d4d54b428bc7d216e468.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 185 bytes {application} [built]
+[./app/javascript/controllers/drag_controller.js] 4.21 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 773 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 45 hidden modules
+
+Completed 200 OK in 3812ms (Views: 3802.5ms | ActiveRecord: 0.0ms | Allocations: 16282)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[Webpacker] Compiled all packs in /home/nova/Documents/stimulus-drag-and-drop/app/public/packs-test
+[Webpacker] Hash: 94ba4edf5c393bbcb7f0
+Version: webpack 4.46.0
+Time: 1845ms
+Built at: 03/17/2021 3:54:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d4d54b428bc7d216e468.js    359 KiB  application  [emitted] [immutable]  application
+js/application-d4d54b428bc7d216e468.js.map    377 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-d4d54b428bc7d216e468.js js/application-d4d54b428bc7d216e468.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 185 bytes {application} [built]
+[./app/javascript/controllers/drag_controller.js] 4.21 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 773 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 45 hidden modules
+
+Completed 200 OK in 3978ms (Views: 3967.0ms | ActiveRecord: 0.1ms | Allocations: 19329)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
